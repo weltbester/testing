@@ -1,6 +1,6 @@
 CC = gcc
-CFLAGS = -std=gnu99 -pedantic -Wall -Wwrite-strings -O3
-DBGFLAGS = -std=gnu99 -pedantic -Wall -Wwrite-strings -ggdb3 -DDEBUG
+CFLAGS = -std=c17 -pedantic -Wall -Wwrite-strings -O3
+DBGFLAGS = -std=c17 -pedantic -Wall -Wwrite-strings -ggdb3 -DDEBUG
 SRCS=$(wildcard *.c)
 OBJS=$(patsubst %.c,%.o,$(SRCS))
 DBGOBJS=$(patsubst %.c,%.dbg.o,$(SRCS))
