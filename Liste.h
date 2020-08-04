@@ -9,12 +9,21 @@
 #pragma once
 
 #include <stdio.h>
-struct Date { short month, day, year; };
+struct Date {
+    short month;
+    short day;
+    short year;
+};
 
-struct Person { char name[128]; struct Date birthday;};
+struct Person {
+    char name[128];
+    struct Date birthday;
+};
 
-struct Element { struct Person person;
-                struct Element *next; };
+struct Element {
+    struct Person person;
+    struct Element *next;
+};
 inline void putData( struct Element *pe ) {
     struct Person *pp = &pe->person;
     printf("%-32s %02d.%02d.%d\n",
