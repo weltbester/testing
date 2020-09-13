@@ -1,7 +1,0 @@
-Montag;2345;2341
-Dienstag;3245;1234
-Mittwoch;4345;4321
-Donnerstag;5467;5432
-Freitag;6578;6543
-Samstag;7689;7654
-Sonntag;1234;1000
