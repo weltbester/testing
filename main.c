@@ -102,21 +102,25 @@ int main(int argc, const char **argv) {
   vector_t v20 = {22.737, 23.64, 0};
   printVector(v19);
   printVector(v20);
+  printf("Theta: %.3f\n", angleRadVector(v19, v20));
   printf("Parallel, Orthogonal? %d/%d\n", isParallel(v19, v20), isOrthogonal(v19, v20));
   vector_t v21 = {-2.029, 9.97, 4.172};
   vector_t v22 = {-9.231, -6.639, -7.245};
   printVector(v21);
   printVector(v22);
+  printf("Theta: %.3f\n", angleRadVector(v21, v22));
   printf("Parallel, Orthogonal? %d/%d\n", isParallel(v21, v22), isOrthogonal(v21, v22));
   vector_t v23 = {-2.328, -7.284, -1.214};
   vector_t v24 = {-1.821, 1.072, -2.94};
   printVector(v23);
   printVector(v24);
+  printf("Theta: %.3f\n", angleRadVector(v23, v24));
   printf("Parallel, Orthogonal? %d/%d\n", isParallel(v23, v24), isOrthogonal(v23, v24));
   vector_t v25 = {2.118, 4.827, 0};
   vector_t v26 = {0, 0, 0};
   printVector(v25);
   printVector(v26);
+  printf("Theta: %.3f\n", angleRadVector(v25, v26));
   printf("Parallel, Orthogonal? %d/%d\n", isParallel(v25, v26), isOrthogonal(v25, v26));
  
   printf("\n");

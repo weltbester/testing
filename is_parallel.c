@@ -21,9 +21,12 @@
 /* {} [] \ */
 
 int isParallel(vector_t v1,vector_t v2 ) {
-  if ( ((v1.xc / v2.xc) == (v1.yc / v2.yc) ) &&  ((v1.xc / v2.xc) == (v1.zc / v2.zc)) ) {
+    if (magnitudeVector(v1) == 0 || magnitudeVector(v2) == 0) {
+        return 1;
+    }
+    if ( (angleRadVector(v1, v2) == 0) || (angleRadVector(v1, v2) - 3.1415926 < 0.00001) ) {
       return 1;
-  }
+    }
   return 0;
 }
 
