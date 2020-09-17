@@ -137,6 +137,8 @@ int main(int argc, const char **argv) {
   printVector(substractVectors(v29, proj1));
   vector_t v31 = {3.009, -6.172, 3.692, -2.510};
   vector_t v32 = {6.404, -9.144, 2.759, 8.718};
+  printVector(v31);
+  printVector(v32);
   vector_t proj2 = projection(v31, v32);
   printf("Projection: ");
   printVector(proj2);

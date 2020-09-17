@@ -26,7 +26,7 @@ vector_t normalizationVector(vector_t v) {
     printf("Cannot normalize a Zero-Vector!");
     return v;
   }
-  normalization = 1 / magnitudeVector(v);
+  normalization = (1 / magnitudeVector(v));
   result = scalarVectors(normalization, v);
   return result;
 }
