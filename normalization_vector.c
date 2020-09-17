@@ -22,12 +22,12 @@
 vector_t normalizationVector(vector_t v) {
   vector_t result;
   double normalization;
-  if (v.xc == 0 && v.yc == 0 && v.zc == 0) {
+  if (v.wc == 0 && v.xc == 0 && v.yc == 0 && v.zc == 0) {
     printf("Cannot normalize a Zero-Vector!");
     return v;
   }
-  normalization = 1 / magnitudeVector(v);
-  result = scalarVectors(v, normalization);
+  normalization = (1 / magnitudeVector(v));
+  result = scalarVectors(normalization, v);
   return result;
 }
 

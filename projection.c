@@ -21,5 +21,5 @@
 /* {} [] \ */
 
 vector_t projection(vector_t v,vector_t b) {
-  return dotProduct(v, b) * b;
+  return scalarVectors(dotProduct(v, normalizationVector(b)), normalizationVector(b));
 }

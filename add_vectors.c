@@ -22,6 +22,7 @@
 
 vector_t addVectors(vector_t v1,vector_t v2 ) {
   vector_t result;
+  result.wc = v1.wc + v2.wc;
   result.xc = v1.xc + v2.xc;
   result.yc = v1.yc + v2.yc;
   result.zc = v1.zc + v2.zc; 

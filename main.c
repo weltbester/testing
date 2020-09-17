@@ -27,7 +27,7 @@ int main(int argc, const char **argv) {
   result = substractVectors(v3, v4);
   printVector(result);
 
-  result = scalarVectors(v5, scalar);
+  result = scalarVectors(scalar, v5);
   printVector(result);
 
   printf("Coding Magnitude ...\n");
@@ -49,7 +49,7 @@ int main(int argc, const char **argv) {
   printf("Magnitude of: \n");
   printVector(v8);
   printf("Magnitude = %f\n", mag);
-  result = scalarVectors(v8, (1/mag));
+  result = scalarVectors((1/mag), v8);
   printf("Normalization: ");
   result = normalizationVector(v8);
   printVector(result);
@@ -59,7 +59,7 @@ int main(int argc, const char **argv) {
   printf("Magnitude of: \n");
   printVector(v9);
   printf("Magnitude = %f\n", mag);
-  result = scalarVectors(v9, (1/mag));
+  result = scalarVectors((1/mag), v9);
   printf("Normalization: ");
   result = normalizationVector(v9);
   printVector(result);
@@ -122,7 +122,28 @@ int main(int argc, const char **argv) {
   printVector(v26);
   printf("Theta: %.3f\n", angleRadVector(v25, v26));
   printf("Parallel, Orthogonal? %d/%d\n", isParallel(v25, v26), isOrthogonal(v25, v26));
- 
+  vector_t v27 = {3.039, 1.879};
+  vector_t v28 = {0.825, 2.036};
+  printVector(v27);
+  printVector(v28);
+  printf("Projection: ");
+  printVector(projection(v27, v28));
+  vector_t v29 = {-9.880, -3.264, -8.159, 0};
+  vector_t v30 = {-2.155, -9.353, -9.473, 0};
+  printVector(v29);
+  printVector(v30);
+  printf("Orthogonal Vector: ");
+  vector_t proj1 = projection(v29, v30);
+  printVector(substractVectors(v29, proj1));
+  vector_t v31 = {3.009, -6.172, 3.692, -2.510};
+  vector_t v32 = {6.404, -9.144, 2.759, 8.718};
+  printVector(v31);
+  printVector(v32);
+  vector_t proj2 = projection(v31, v32);
+  printf("Projection: ");
+  printVector(proj2);
+  printf("Orthogonal Vector: ");
+  printVector(substractVectors(v31, proj2));
   printf("\n");
   return EXIT_SUCCESS;
 } /* main {} [] || \n */
