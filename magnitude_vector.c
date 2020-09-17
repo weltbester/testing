@@ -20,8 +20,8 @@
 /* FUNCTIONS */
 /* {} [] \ */
 
-double magnitudeVector(vector_t v1) {
+double magnitudeVector(vector_t v) {
   double magnitude;
-  magnitude = sqrt( ((pow(v1.xc, 2) + pow(v1.yc, 2) + pow(v1.zc, 2))) );
+  magnitude = sqrt( ((pow(v.wc, 2)) + (pow(v.xc, 2) + pow(v.yc, 2) + pow(v.zc, 2))) );
   return magnitude;
 }

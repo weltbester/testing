@@ -9,6 +9,7 @@
 #pragma once
 
 typedef struct vector_type {
+  double wc;
   double xc;
   double yc;
   double zc;
@@ -36,7 +37,7 @@ double angleRadVector(vector_t v1, vector_t v2);
  * Vector is provided an error message is returned:
  */
 
-vector_t normalizationVector(vector_t v1);
+vector_t normalizationVector(vector_t v);
 
 /*
  * Implementation notes: angleDegVector
@@ -76,7 +77,7 @@ double dotProduct(vector_t v1, vector_t v2);
  * 3-dimensional vector.
  */
 
-double magnitudeVector(vector_t v1);
+double magnitudeVector(vector_t v);
 
 /*
  * Implementation notes: printVector
@@ -85,7 +86,7 @@ double magnitudeVector(vector_t v1);
  * This function prints a 3-dimensional vector to 'stdout'.
  */
 
-void printVector(vector_t v1);
+void printVector(vector_t v);
 
 /*
  * Implementation notes: addVectors
@@ -112,6 +113,6 @@ vector_t substractVectors(vector_t v1,vector_t v2);
  * This function mulitplies a 3-dimensional vector wiht a scalar.
  */
 
-vector_t scalarVectors(vector_t v1, double scalar);
+vector_t scalarVectors(double scalar, vector_t v);
 
 // {} [] || \n */

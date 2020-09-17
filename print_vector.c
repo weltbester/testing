@@ -20,8 +20,8 @@
 /* FUNCTIONS */
 /* {} [] \ */
 
-void printVector(vector_t v1) {
-  printf("Vector: [%.3f, %.3f, %.3f]\n", v1.xc, v1.yc, v1.zc);
+void printVector(vector_t v) {
+  printf("Vector: [%.3f, %.3f, %.3f, %.3f]\n", v.wc, v.xc, v.yc, v.zc);
   
   return;
 }

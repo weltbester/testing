@@ -21,6 +21,6 @@
 /* {} [] \ */
 
 double dotProduct(vector_t v1, vector_t v2) { 
-  return v1.xc * v2.xc + v1.yc * v2.yc + v1.zc * v2.zc;
+  return v1.wc * v2.wc + v1.xc * v2.xc + v1.yc * v2.yc + v1.zc * v2.zc;
 }
         

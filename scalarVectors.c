@@ -20,11 +20,12 @@
 /* FUNCTIONS */
 /* {} [] \ */
 
-vector_t scalarVectors(vector_t v1, double scalar) {
+vector_t scalarVectors(double scalar, vector_t v) {
   vector_t result;
-  result.xc = scalar * v1.xc;
-  result.yc = scalar * v1.yc;
-  result.zc = scalar * v1.zc; 
+  result.wc = scalar * v.wc;
+  result.xc = scalar * v.xc;
+  result.yc = scalar * v.yc;
+  result.zc = scalar * v.zc; 
   
   return result;
 }
