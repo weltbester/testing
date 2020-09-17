@@ -18,6 +18,9 @@ typedef struct vector_type {
 int isParallel(vector_t v1, vector_t v2);
 int isOrthogonal(vector_t v1, vector_t v2);
 vector_t projection(vector_t v, vector_t b);
+vector_t crossProduct(vector_t v1, vector_t v2);
+double areaOfTwoVectors(vector_t v1, vector_t v2);
+double triangleOfTwoVectors(vector_t v1, vector_t v2);
 
 /*
  * Implementation notes: angleRadVector
